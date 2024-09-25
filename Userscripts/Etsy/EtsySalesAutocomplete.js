@@ -3,9 +3,9 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://www.etsy.com/your/shops/me/sales-discounts*
 // @grant       none
-// @version     2024.9.25
+// @version     2024.9.25.1
 // @author      Chi-Feng Hsu
-// @description 9/24/2024, 2:45:25 PM
+// @description Auto Complete Sales Form for Etsy Shop
 // @downloadURL https://raw.githubusercontent.com/mr-cfh/Home-Projects/refs/heads/main/Userscripts/Etsy/EtsySalesAutocomplete.js
 // @updateURL   https://raw.githubusercontent.com/mr-cfh/Home-Projects/refs/heads/main/Userscripts/Etsy/EtsySalesAutocomplete.js
 
