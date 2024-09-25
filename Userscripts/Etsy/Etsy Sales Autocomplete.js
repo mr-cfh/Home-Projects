@@ -3,31 +3,11 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://www.etsy.com/your/shops/me/sales-discounts*
 // @grant       none
-// @version     2024.9.25
+// @version     2024.9.25.1
 // @author      -
 // @description 9/24/2024, 2:45:25 PM
-// ==/UserScript==
-
-// function checkButton(buttonName) {
-//   var targetButton;
-
-//   for (xbutton in document.getElementsByTagName("button")) {
-//     if (xbutton.innerText != undefined && xbutton.innerText.localeCompare(buttonName)) {
-//       targetButton = xbutton;
-//     }
-//   }
-
-//   return targetButton;
-// }
-
-// function confirmationClicks() {
-
-//   var buttonContinue = checkButton("Continue");
-//   if (buttonContinue != undefined) {
-//     // buttonContinue.click();
-//     buttonContinue.dispatchEvent( new Event('click'));
-//   }
-// }
+// @downloadURL https://raw.githubusercontent.com/mr-cfh/Home-Projects/refs/heads/main/Userscripts/Etsy/Etsy%20Sales%20Autocomplete.js
+// @updateURL   https://raw.githubusercontent.com/mr-cfh/Home-Projects/refs/heads/main/Userscripts/Etsy/Etsy%20Sales%20Autocomplete.js
 
 function getSalesDate() {
   var latestDateString = document.querySelectorAll('[role="rowheader"]')[2].children[1].innerText;
