@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://www.etsy.com/your/shops/me/sales-discounts*
 // @grant       none
-// @version     2024.9.25.1
+// @version     2024.9.25.2
 // @author      Chi-Feng Hsu
 // @description Auto Complete Sales Form for Etsy Shop
 // @downloadURL https://raw.githubusercontent.com/mr-cfh/Home-Projects/refs/heads/main/Userscripts/Etsy/EtsySalesAutocomplete.js
@@ -40,21 +40,21 @@ function confirmationClicks() {
       if (currentStep == STEP_CONTINUE && buttonContinue != undefined) {
       buttonContinue.dispatchEvent( new Event('click'));
       currentStep = STEP_REVIEW;
-      console.log("Continue");
+      // console.log("Continue");
     }
   } else if (currentStep == STEP_REVIEW) {
     var buttonReview = checkButton("Review and confirm");
     if (buttonReview != undefined) {
       buttonReview.dispatchEvent( new Event('click'));
       currentStep = STEP_CONFIRM;
-      console.log("Review");
+      // console.log("Review");
     }
   } else if (currentStep == STEP_CONFIRM) {
     var buttonConfirm = checkButton("Confirm and create sale");
     if (buttonConfirm != undefined) {
       buttonConfirm.dispatchEvent( new Event('click'));
       currentStep = STEP_CONTINUE;
-      console.log("Confirm");
+      // console.log("Confirm");
     }
   }
 }
