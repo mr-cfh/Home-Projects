@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://www.etsy.com/your/shops/me/sales-discounts*
 // @grant       none
-// @version     2024.9.25.2
+// @version     2024.10.04
 // @author      Chi-Feng Hsu
 // @description Auto Complete Sales Form for Etsy Shop
 // @downloadURL https://raw.githubusercontent.com/mr-cfh/Home-Projects/refs/heads/main/Userscripts/Etsy/EtsySalesAutocomplete.js
@@ -60,7 +60,8 @@ function confirmationClicks() {
 }
 
 function getSalesDate() {
-  var latestDateString = document.querySelectorAll('[role="rowheader"]')[2].children[1].innerText;
+  const targetRow = 3;
+  var latestDateString = document.querySelectorAll('[role="rowheader"]')[targetRow].children[1].innerText;
 
   // Get Last Sales Date
   var year = parseInt(latestDateString.substring(0,4));
